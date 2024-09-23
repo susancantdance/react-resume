@@ -21,7 +21,7 @@ export function General({
         <div className="fields">
           <div className="formfield">
             <label>
-              Full Name:
+              Name:
               <input
                 key={name}
                 placeholder="Enter your name"
