@@ -49,3 +49,75 @@ body {
 button {
   margin-top: 30px;
 }
+
+@media (max-width: 599px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: lightblue; */
+  }
+
+  .h-one {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    width: 100vw;
+    flex: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* background-color: pink; */
+  }
+
+  /* .resume {
+        /* background-color: red; 
+      } */
+
+  .general {
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    margin: 50px;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    margin: 50px;
+  }
+
+  .general-data {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  input {
+    height: 30px;
+    width: 200px;
+  }
+
+  .fields {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: -20px;
+    margin-right: 20px;
+  }
+
+  .formfield {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  button {
+    margin-top: 30px;
+    height: 50px;
+    width: 70vw;
+  }
+}

@@ -18,42 +18,44 @@ export function General({
     return (
       <div className="general">
         <h1 className="h-one">General Information</h1>
-        <div className="formfield">
-          <label>
-            Full Name:
-            <input
-              key={name}
-              placeholder="Enter your name"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-              autoFocus
-              disabled={display}
-            ></input>
-          </label>
-        </div>
-        <div className="formfield">
-          <label>
-            Email:
-            <input
-              key={email}
-              onChange={(e) => setEmail(e.target.value)}
-              autoFocus
-              value={email}
-              disabled={display}
-            ></input>
-          </label>
-        </div>
-        <div className="formfield">
-          <label>
-            Phone Number:
-            <input
-              key={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              autoFocus
-              value={phone}
-              disabled={display}
-            ></input>
-          </label>
+        <div className="fields">
+          <div className="formfield">
+            <label>
+              Full Name:
+              <input
+                key={name}
+                placeholder="Enter your name"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                autoFocus
+                disabled={display}
+              ></input>
+            </label>
+          </div>
+          <div className="formfield">
+            <label>
+              Email:
+              <input
+                key={email}
+                onChange={(e) => setEmail(e.target.value)}
+                autoFocus
+                value={email}
+                disabled={display}
+              ></input>
+            </label>
+          </div>
+          <div className="formfield">
+            <label>
+              Phone:
+              <input
+                key={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                autoFocus
+                value={phone}
+                disabled={display}
+              ></input>
+            </label>
+          </div>
         </div>
         <div>
           <button onClick={() => setDisplay(true)} disabled={display}>
